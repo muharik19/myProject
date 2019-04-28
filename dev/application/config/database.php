@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------
@@ -70,24 +70,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
+
+global $SConfig;
 $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
+	'hostname' => $SConfig->host_name,
+	'username' => $SConfig->database_user,
+	'password' => $SConfig->database_password,
+	'database' => $SConfig->database_name,
 	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
+	'dbprefix' => $SConfig->table_prefix,
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
 	'cachedir' => '',
 	'char_set' => 'utf8',
 	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
+	'swap_pre' => '{PRE}',
 	'encrypt' => FALSE,
 	'compress' => FALSE,
 	'stricton' => FALSE,

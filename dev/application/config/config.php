@@ -34,7 +34,8 @@ spl_autoload_register(function ($class) {
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+global $SConfig;
+$config['base_url'] = $SConfig->site_url;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,7 +47,7 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

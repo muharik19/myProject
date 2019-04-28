@@ -6,5 +6,7 @@ class Backend_Controller extends MY_Controller
     public function __construct()
     {
         parent::__construct();
+        $this->site->side = 'backend';
+        $this->site->template = 'metronic';
     }
 }
