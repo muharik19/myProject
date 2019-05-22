@@ -5,6 +5,6 @@ class Dashboard extends Backend_Controller
 {
     public function index()
     {
-        echo "backend";
+        $this->site->view('index');
     }
 }
