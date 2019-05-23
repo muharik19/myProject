@@ -13,7 +13,7 @@
             <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
             <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
             <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
-            <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top:4px">
+            <ul class="page-sidebar-menu  page-header-fixed" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top:4px">
                 <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
                 <li class="heading">
                     <h3 class="uppercase">Admin</h3>
@@ -27,7 +27,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li class="nav-item start active open">
-                            <a href="index.html" class="nav-link ">
+                            <a href="<?= admin_url('dashboard'); ?>" class="nav-link ">
                                 <i class="icon-bar-chart"></i>
                                 <span class="title">Dashboard</span>
                                 <span class="selected"></span>
@@ -57,6 +57,12 @@
                                 <span class="title">Submenu Management</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="layout_blank_page.html" class="nav-link">
+                                <i class="fa fa-send"></i>
+                                <span class="title">Role</span>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="heading">
@@ -70,27 +76,9 @@
                     </a>
                     <ul class="sub-menu">
                         <li class="nav-item">
-                            <a href="layout_blank_page.html" class="nav-link">
-                                <i class="fa fa-send"></i>
-                                <span class="title">Role</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="layout_blank_page.html" class="nav-link">
-                                <i class="fa fa-user"></i>
+                            <a href="<?= admin_url('profileaccount'); ?>" class="nav-link">
+                                <i class="fa fa-user-secret"></i>
                                 <span class="title">My Profile</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="layout_blank_page.html" class="nav-link">
-                                <i class="fa fa-pencil-square-o"></i>
-                                <span class="title">Edit Profile</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="layout_blank_page.html" class="nav-link">
-                                <i class="fa fa-unlock-alt"></i>
-                                <span class="title">Change Password</span>
                             </a>
                         </li>
                     </ul>

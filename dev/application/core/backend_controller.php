@@ -8,7 +8,7 @@ class Backend_Controller extends MY_Controller
         parent::__construct();
         $this->load->helper([]);
         $this->load->library([]);
-        $this->load->model([]);
+        $this->load->model(['User_model']);
 
         $this->site->side = 'backend';
         $this->site->template = 'metronic';

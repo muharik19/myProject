@@ -15,3 +15,13 @@ function get_template($view)
     $me = get_instance();
     return $me->site->view($view);
 }
+
+function admin_url($sub)
+{
+    $me = get_instance();
+    if ($me->site->side == 'backend') {
+        return site_url('admin/' . $sub);
+    } else {
+        return site_url($sub);
+    }
+}

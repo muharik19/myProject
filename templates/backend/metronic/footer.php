@@ -43,6 +43,7 @@
 <script src="<?= get_template_directory(dirname(__FILE__), 'assets') ?>/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
 <script src="<?= get_template_directory(dirname(__FILE__), 'assets') ?>/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
 <script src="<?= get_template_directory(dirname(__FILE__), 'assets') ?>/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+<script src="<?= get_template_directory(dirname(__FILE__), 'assets') ?>/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
 <script src="<?= get_template_directory(dirname(__FILE__), 'assets') ?>/global/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
 <script src="<?= get_template_directory(dirname(__FILE__), 'assets') ?>/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
 <script src="<?= get_template_directory(dirname(__FILE__), 'assets') ?>/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
@@ -56,6 +57,7 @@
 <!-- END THEME GLOBAL SCRIPTS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="<?= get_template_directory(dirname(__FILE__), 'assets') ?>/pages/scripts/dashboard.min.js" type="text/javascript"></script>
+<script src="<?= get_template_directory(dirname(__FILE__), 'assets') ?>/pages/scripts/profile.min.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <!-- BEGIN THEME LAYOUT SCRIPTS -->
 <script src="<?= get_template_directory(dirname(__FILE__), 'assets') ?>/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>

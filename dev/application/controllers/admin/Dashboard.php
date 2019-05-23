@@ -5,6 +5,9 @@ class Dashboard extends Backend_Controller
 {
     public function index()
     {
-        $this->site->view('index');
+        $data = [
+            'title' => 'MNC Bank | Dashboard'
+        ];
+        $this->site->view('index', $data);
     }
 }
